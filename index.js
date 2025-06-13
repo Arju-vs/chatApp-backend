@@ -53,7 +53,7 @@ app.use("/api/messages", messageRouter)
 await connectDB()
 
 server.get('/', (req,res)=>{
-    res.status(200).send("Connected")
+    res.send("Server is running")
 })
 
 const PORT = process.env.PORT || 5000
