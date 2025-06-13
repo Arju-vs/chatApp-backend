@@ -40,7 +40,7 @@ io.on("connection",(socket)=>{
 // middleWare
 app.use(express.json({ limit: '10mb' }))
 app.use(cors({
-  origin: 'http://localhost:5173', 
+  origin: 'https://chat-app-ebon-two-11.vercel.app', 
   credentials: true
 }))
 
